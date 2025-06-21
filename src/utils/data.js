@@ -1,3 +1,10 @@
+import ADIDAS from "../assets/Logo/adidas.png";
+import COKE from "../assets/Logo/coca-cola.png";
+import DIALOG from "../assets/Logo/dialog.png";
+import DSI from "../assets/Logo/dsi.png";
+import HIRU_TV from "../assets/Logo/hiru-tv.png";
+import MOBITEL from "../assets/Logo/mobitel.png";
+
 export const NAVLINKS = [
   {
     name: "Home",
@@ -35,4 +42,31 @@ export const CHART_DATA = [
   { value: 600 },
   { value: 700 },
   { value: 1000 },
+];
+
+export const LOGO_ICONS = [
+  { name: "", logo: ADIDAS },
+  { name: "", logo: DSI },
+  { name: "", logo: DIALOG },
+  { name: "", logo: MOBITEL },
+  { name: "", logo: HIRU_TV },
+  { name: "", logo: COKE },
+  { name: "", logo: ADIDAS },
+  { name: "", logo: DSI },
+  { name: "", logo: DIALOG },
+  { name: "", logo: MOBITEL },
+  { name: "", logo: HIRU_TV },
+  { name: "", logo: COKE },
+  { name: "", logo: ADIDAS },
+  { name: "", logo: DSI },
+  { name: "", logo: DIALOG },
+  { name: "", logo: MOBITEL },
+  { name: "", logo: HIRU_TV },
+  { name: "", logo: COKE },
+  { name: "", logo: ADIDAS },
+  { name: "", logo: DSI },
+  { name: "", logo: DIALOG },
+  { name: "", logo: MOBITEL },
+  { name: "", logo: HIRU_TV },
+  { name: "", logo: COKE },
 ];

@@ -7,6 +7,7 @@ import Pricing from '../sections/Pricing/Pricing.component'
 import Stories from '../sections/Stories/Stories.section'
 import Blogs from '../sections/Blogs/Blogs.section'
 import Contact from '../sections/Contact/Contact.section'
+import AnimatedLogo from '../components/Animations/AnimatedLogo.component'
 
 const Landing = () => {
   return (
@@ -14,6 +15,7 @@ const Landing = () => {
       <Navbar />
       <div className="container mx-auto mt-22 md:mt-26 p-5 md:p-0">
         <Hero />
+        <AnimatedLogo />
         <Features />
         <UseCases />
         <Pricing />
