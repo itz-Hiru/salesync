@@ -12,7 +12,7 @@ const Landing = () => {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto mt-24">
+      <div className="container mx-auto mt-22 md:mt-26 p-5 md:p-0">
         <Hero />
         <Features />
         <UseCases />
