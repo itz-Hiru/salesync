@@ -1,8 +1,10 @@
-import React from 'react'
+import Landing from './pages/Landing.page'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Landing />
+    </div>
   )
 }
 
