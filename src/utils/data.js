@@ -28,3 +28,11 @@ export const NAVLINKS = [
     path: "#contact",
   },
 ];
+
+export const CHART_DATA = [
+  { value: 100 },
+  { value: 500 },
+  { value: 600 },
+  { value: 700 },
+  { value: 1000 },
+];
