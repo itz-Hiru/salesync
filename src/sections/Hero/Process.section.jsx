@@ -1,82 +1,56 @@
-import React from "react";
 import LOGO from "../../assets/logo.png";
 import { steps } from "../../utils/data";
 
-const connectorPositions = [
-  { top: "-150px", left: "50%", transform: "translateX(-50%)" },
-  { top: "50%", right: "250px", transform: "translateY(-50%)" },
-  { bottom: "-160px", left: "50%", transform: "translateX(-50%)" },
-  { top: "50%", left: "250px", transform: "translateY(-50%)" },
-];
-
 const Process = () => {
   return (
-    <div className="hidden xl:flex flex-col py-45">
-      <div className="relative w-full flex justify-center items-center py-32">
-        <div className="relative w-64 h-64 rounded-full bg-transparent border-[15px] border-t-[#06B6D4] border-r-[#0E7490] border-b-[#164E63] border-l-[#155E75] flex items-center justify-center z-10">
-          <div className="w-56 h-56 rounded-full bg-white flex items-center justify-center">
+    <div className="flex flex-col items-center justify-center py-16">
+      <h2 className="text-3xl font-bold">DMS Process Diagram</h2>
+      <div className="flex flex-col md:flex-row gap-25 justify-center items-center mt-16">
+        <div className="w-64 h-64 rounded-full bg-transparent border-15 border-t-[#06B6D4] border-r-[#0E7490] border-l-[#155E75] border-b-[#164E63] flex items-center justify-center">
+          <div className="w-56 h-56 rounded-full bg-white items-center justify-center flex">
             <img src={LOGO} alt="logo" className="w-36 h-auto" />
           </div>
         </div>
-        {steps.map((step, index) => (
-          <div
-            key={index}
-            className="absolute w-56 p-4 bg-white rounded-md shadow-lg flex flex-col items-center"
-            style={{
-              ...connectorPositions[index],
-              position: "absolute",
-              color: step.color,
-            }}
-          >
+        <div className="flex flex-col gap-5">
+          {steps.map((step, index) => (
             <div
-              className="absolute w-1 h-16 z-0"
-              style={{
-                backgroundColor: step.color,
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%) rotate(45deg)",
-                ...(index === 0 && {
-                  top: "100%",
-                  transform: "translateX(-50%) rotate(0deg)",
-                }),
-                ...(index === 1 && {
-                  left: "-8px",
-                  top: "50%",
-                  transform: "translateY(-50%) rotate(90deg)",
-                }),
-                ...(index === 2 && {
-                  top: "-65px",
-                  transform: "translateX(-50%) rotate(0deg)",
-                }),
-                ...(index === 3 && {
-                  left: "230px",
-                  top: "50%",
-                  transform: "translateY(-50%) rotate(90deg)",
-                }),
-              }}
-            />
-            <div className="flex items-center justify-center mb-2">
+              key={index}
+              className="bg-white p-4 rounded-md shadow-lg flex flex-row gap-4 items-center justify-center"
+            >
               <div
-                className="border-4 w-16 h-16 flex flex-col items-center justify-center rounded-lg shadow-md text-sm font-bold uppercase"
+                className="flex flex-col items-center justify-center border-4 w-18 h-18 bg-white shadow-md rounded-lg "
                 style={{
                   borderColor: step.color,
-                  boxShadow: `0 0 10px ${step.color}`,
+                  boxShadow: `0 2px 10px ${step.color}`,
                 }}
               >
-                Step {step.step}
+                <p className="uppercase font-medium text-sm text-gray-700">
+                  Step
+                </p>
+                <span className="text-2xl font-semibold -mt-2 text-shadow-md text-shadow-black/30">
+                  {step.step}
+                </span>
+              </div>
+              <div className="flex flex-col gap-2">
+                <h2
+                  className="text-xl font-semibold "
+                  style={{
+                    color: step.color,
+                    textShadow: `0 0px 2px ${step.color}`,
+                  }}
+                >
+                  {step.title}
+                </h2>
+                <p className="max-w-72 text-xs text-gray-400">
+                  {step.description}
+                </p>
+              </div>
+              <div className="text-3xl" style={{ color: step.color }}>
+                <step.icon />
               </div>
             </div>
-            <h2
-              className="text-center text-lg font-semibold"
-              style={{ color: step.color }}
-            >
-              {step.title}
-            </h2>
-            <p className="text-xs text-gray-500 text-center">
-              {step.description}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
