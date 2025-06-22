@@ -10,6 +10,12 @@ import DIALOG from "../assets/Logo/dialog.png";
 import DSI from "../assets/Logo/dsi.png";
 import HIRU_TV from "../assets/Logo/hiru-tv.png";
 import MOBITEL from "../assets/Logo/mobitel.png";
+import CASE01 from "../assets/Use-Cases/image-01.jpg";
+import CASE02 from "../assets/Use-Cases/image-02.jpg";
+import CASE03 from "../assets/Use-Cases/image-03.jpg";
+import CASE04 from "../assets/Use-Cases/image-04.jpg";
+import CASE05 from "../assets/Use-Cases/image-05.jpg";
+import CASE06 from "../assets/Use-Cases/image-06.jpg";
 
 export const NAVLINKS = [
   {
@@ -196,5 +202,32 @@ Uncover high-impact sales drivers:
 - Benchmark individual/team performance
 - Use KPI-based incentives to boost motivation
 Make data-backed decisions to maximize sales effectiveness.`,
+  },
+];
+
+export const USECASES = [
+  {
+    name: "Outlet Coverage Heat Map",
+    image: CASE01,
+  },
+  {
+    name: "BEAT/ROUTE Validation",
+    image: CASE02,
+  },
+  {
+    name: "Brand Coverage Map",
+    image: CASE03,
+  },
+  {
+    name: "Visit Coverage Heat Map",
+    image: CASE04,
+  },
+  {
+    name: "Facetime Outlet Coverage Map",
+    image: CASE05,
+  },
+  {
+    name: "Not ordered Outlet Coverage Map",
+    image: CASE06,
   },
 ];
