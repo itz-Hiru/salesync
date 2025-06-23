@@ -1,10 +1,25 @@
 import { BsTelephoneInbound } from "react-icons/bs";
-import { FaShoppingCart, FaUsers, FaUserTag } from "react-icons/fa";
+import {
+  FaBoxes,
+  FaMoneyCheckAlt,
+  FaShippingFast,
+  FaShoppingCart,
+  FaUsers,
+  FaUserTag,
+} from "react-icons/fa";
 import { FaBuilding, FaIndustry } from "react-icons/fa6";
 import { IoMdTime } from "react-icons/io";
 import { IoBulbOutline, IoSettingsOutline } from "react-icons/io5";
 import { LuChartNoAxesCombined } from "react-icons/lu";
-import { MdAssessment, MdMonitor, MdShoppingCart } from "react-icons/md";
+import {
+  MdAssessment,
+  MdAssignmentTurnedIn,
+  MdMessage,
+  MdMonitor,
+  MdPeopleAlt,
+  MdPhoneIphone,
+  MdShoppingCart,
+} from "react-icons/md";
 import ADIDAS from "../assets/Logo/adidas.png";
 import COKE from "../assets/Logo/coca-cola.png";
 import DIALOG from "../assets/Logo/dialog.png";
@@ -26,6 +41,7 @@ import ATTENDANCE from "../assets/Interfaces/attendance.jpg";
 import TESTIMONIAL_IMAGE_01 from "../assets/Testimonials/testimonial-01.jpg";
 import TESTIMONIAL_IMAGE_02 from "../assets/Testimonials/testimonial-02.jpg";
 import TESTIMONIAL_IMAGE_03 from "../assets/Testimonials/testimonial-03.jpg";
+import { BiBarChartSquare } from "react-icons/bi";
 
 export const NAVLINKS = [
   {
@@ -317,5 +333,56 @@ export const TESTIMONIALS = [
     facebook: "www.facebook.com/",
     twitter: "www.twitter.com/",
     linkedin: "www.linkedin.com/in/",
+  },
+];
+
+export const BENEFITS = [
+  {
+    icon: MdAssignmentTurnedIn,
+    title: "Streamlined Order Management",
+    description:
+      "Salesync simplifies order handling by automating order capture, tracking, and fulfillment. Say goodbye to paperwork and reduce errors, all while keeping customers and distributors in sync.",
+  },
+  {
+    icon: FaBoxes,
+    title: "Real-Time Inventory Visibility",
+    description:
+      "Get a live overview of inventory across all your distribution points. With automated stock updates, you’ll never oversell or run out of stock again—ensuring smoother logistics and satisfied clients.",
+  },
+  {
+    icon: FaShippingFast,
+    title: "Faster Distribution Workflows",
+    description:
+      "Automate routine tasks and build efficient workflows tailored for distribution. Save time, eliminate bottlenecks, and accelerate product movement from warehouse to retailer with ease.",
+  },
+  {
+    icon: MdPeopleAlt,
+    title: "Centralized Distributor Data",
+    description:
+      "Maintain all distributor profiles, contacts, transaction records, and analytics in one platform. With everything organized, collaboration becomes effortless and more productive.",
+  },
+  {
+    icon: BiBarChartSquare,
+    title: "Advanced Sales Reporting",
+    description:
+      "Visualize sales data, monitor distributor performance, and identify growth opportunities. Salesync delivers actionable insights through smart dashboards and customizable reports.",
+  },
+  {
+    icon: MdPhoneIphone,
+    title: "Mobile Access for Field Teams",
+    description:
+      "Enable your field sales and delivery teams to update orders, check inventory, and communicate on the go. Salesync’s mobile-optimized experience keeps your team connected and agile.",
+  },
+  {
+    icon: FaMoneyCheckAlt,
+    title: "Automated Payment Tracking",
+    description:
+      "Never miss a payment again. Automatically track invoices, due dates, and payment status to ensure cash flow remains steady and reconciliations are seamless.",
+  },
+  {
+    icon: MdMessage,
+    title: "Seamless Communication Channels",
+    description:
+      "Keep your entire distribution network in sync with built-in messaging, alerts, and notifications. Communicate faster and make sure everyone’s always on the same page.",
   },
 ];

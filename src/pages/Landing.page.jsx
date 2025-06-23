@@ -12,6 +12,7 @@ import Process from "../sections/Hero/Process.section";
 import WorkFlow from "../sections/WorkFlow/WorkFlow.section";
 import Interfaces from "../sections/Interfaces/Interfaces.section";
 import Testimonials from "../sections/Testimonials/Testimonials.section";
+import Benefits from "../sections/Benefits/Benefits.section";
 
 const Landing = () => {
   return (
@@ -27,6 +28,7 @@ const Landing = () => {
         <WorkFlow />
         <Interfaces />
         <Testimonials />
+        <Benefits />
         <Stories />
         <Blogs />
         <Contact />
