@@ -9,6 +9,7 @@ import Blogs from "../sections/Blogs/Blogs.section";
 import Contact from "../sections/Contact/Contact.section";
 import AnimatedLogo from "../sections/Hero/AnimatedLogo.section";
 import Process from "../sections/Hero/Process.section";
+import WorkFlow from "../sections/WorkFlow/WorkFlow.section";
 
 const Landing = () => {
   return (
@@ -21,6 +22,7 @@ const Landing = () => {
         <Features />
         <UseCases />
         <Pricing />
+        <WorkFlow />
         <Stories />
         <Blogs />
         <Contact />

@@ -1,5 +1,5 @@
 import { BsTelephoneInbound } from "react-icons/bs";
-import { FaUsers, FaUserTag } from "react-icons/fa";
+import { FaShoppingCart, FaUsers, FaUserTag } from "react-icons/fa";
 import { IoMdTime } from "react-icons/io";
 import { IoBulbOutline, IoSettingsOutline } from "react-icons/io5";
 import { LuChartNoAxesCombined } from "react-icons/lu";
@@ -16,6 +16,7 @@ import CASE03 from "../assets/Use-Cases/image-03.jpg";
 import CASE04 from "../assets/Use-Cases/image-04.jpg";
 import CASE05 from "../assets/Use-Cases/image-05.jpg";
 import CASE06 from "../assets/Use-Cases/image-06.jpg";
+import { FaBuilding, FaIndustry } from "react-icons/fa6";
 
 export const NAVLINKS = [
   {
@@ -229,5 +230,26 @@ export const USECASES = [
   {
     name: "Not ordered Outlet Coverage Map",
     image: CASE06,
+  },
+];
+
+export const WORKFLOWS = [
+  {
+    icon: FaIndustry,
+    title: "FMCG Industry",
+    description:
+      "SALESYNC streamlines supply chains, sales tracking, and distributor management for fast-moving consumer goods, ensuring efficiency and real-time analytics.",
+  },
+  {
+    icon: FaShoppingCart,
+    title: "Consumer Goods Industry",
+    description:
+      "Empower your sales teams with intelligent dashboards, territory mapping, and retail insights tailored to the consumer goods landscape.",
+  },
+  {
+    icon: FaBuilding,
+    title: "Building Materials Industry",
+    description:
+      "Manage dealer networks, monitor construction site deliveries, and track bulk orders with ease through our scalable workflow system.",
   },
 ];
