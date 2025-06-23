@@ -10,6 +10,7 @@ import Contact from "../sections/Contact/Contact.section";
 import AnimatedLogo from "../sections/Hero/AnimatedLogo.section";
 import Process from "../sections/Hero/Process.section";
 import WorkFlow from "../sections/WorkFlow/WorkFlow.section";
+import Interfaces from "../sections/Interfaces/Interfaces.section";
 
 const Landing = () => {
   return (
@@ -23,6 +24,7 @@ const Landing = () => {
         <UseCases />
         <Pricing />
         <WorkFlow />
+        <Interfaces />
         <Stories />
         <Blogs />
         <Contact />

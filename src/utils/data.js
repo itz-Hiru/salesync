@@ -1,5 +1,6 @@
 import { BsTelephoneInbound } from "react-icons/bs";
 import { FaShoppingCart, FaUsers, FaUserTag } from "react-icons/fa";
+import { FaBuilding, FaIndustry } from "react-icons/fa6";
 import { IoMdTime } from "react-icons/io";
 import { IoBulbOutline, IoSettingsOutline } from "react-icons/io5";
 import { LuChartNoAxesCombined } from "react-icons/lu";
@@ -16,7 +17,12 @@ import CASE03 from "../assets/Use-Cases/image-03.jpg";
 import CASE04 from "../assets/Use-Cases/image-04.jpg";
 import CASE05 from "../assets/Use-Cases/image-05.jpg";
 import CASE06 from "../assets/Use-Cases/image-06.jpg";
-import { FaBuilding, FaIndustry } from "react-icons/fa6";
+import TRACKING from "../assets/Interfaces/tracking.jpg";
+import STOCK from "../assets/Interfaces/stock.jpg";
+import REPORT from "../assets/Interfaces/reports.jpg";
+import INSPECTION from "../assets/Interfaces/inspection.jpg";
+import PRODUCT_MANAGEMENT from "../assets/Interfaces/product-management.jpg";
+import ATTENDANCE from "../assets/Interfaces/attendance.jpg";
 
 export const NAVLINKS = [
   {
@@ -251,5 +257,32 @@ export const WORKFLOWS = [
     title: "Building Materials Industry",
     description:
       "Manage dealer networks, monitor construction site deliveries, and track bulk orders with ease through our scalable workflow system.",
+  },
+];
+
+export const INTERFACES = [
+  {
+    name: "Tracking",
+    image: TRACKING,
+  },
+  {
+    name: "Stock",
+    image: STOCK,
+  },
+  {
+    name: "Report",
+    image: REPORT,
+  },
+  {
+    name: "Inspection",
+    image: INSPECTION,
+  },
+  {
+    name: "Product Management",
+    image: PRODUCT_MANAGEMENT,
+  },
+  {
+    name: "Attendance",
+    image: ATTENDANCE,
   },
 ];
