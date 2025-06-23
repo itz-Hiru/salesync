@@ -11,6 +11,7 @@ import AnimatedLogo from "../sections/Hero/AnimatedLogo.section";
 import Process from "../sections/Hero/Process.section";
 import WorkFlow from "../sections/WorkFlow/WorkFlow.section";
 import Interfaces from "../sections/Interfaces/Interfaces.section";
+import Testimonials from "../sections/Testimonials/Testimonials.section";
 
 const Landing = () => {
   return (
@@ -25,6 +26,7 @@ const Landing = () => {
         <Pricing />
         <WorkFlow />
         <Interfaces />
+        <Testimonials />
         <Stories />
         <Blogs />
         <Contact />

@@ -23,6 +23,9 @@ import REPORT from "../assets/Interfaces/reports.jpg";
 import INSPECTION from "../assets/Interfaces/inspection.jpg";
 import PRODUCT_MANAGEMENT from "../assets/Interfaces/product-management.jpg";
 import ATTENDANCE from "../assets/Interfaces/attendance.jpg";
+import TESTIMONIAL_IMAGE_01 from "../assets/Testimonials/testimonial-01.jpg";
+import TESTIMONIAL_IMAGE_02 from "../assets/Testimonials/testimonial-02.jpg";
+import TESTIMONIAL_IMAGE_03 from "../assets/Testimonials/testimonial-03.jpg";
 
 export const NAVLINKS = [
   {
@@ -284,5 +287,35 @@ export const INTERFACES = [
   {
     name: "Attendance",
     image: ATTENDANCE,
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    name: "Sofia Javis",
+    image: TESTIMONIAL_IMAGE_01,
+    description:
+      "Switching to this sales software completely transformed how my team works. From lead tracking to closing deals, everything is streamlined and intuitive. We’ve cut our manual workload in half and increased conversions by 30% in just two months!",
+    facebook: "www.facebook.com/",
+    twitter: "www.twitter.com/",
+    linkedin: "www.linkedin.com/in/",
+  },
+  {
+    name: "Anushka Sharma",
+    image: TESTIMONIAL_IMAGE_02,
+    description:
+      "What I love most is how easy the dashboard is to navigate. Even my newest team members picked it up in no time. The automation features save me hours every week, and the real-time insights help us make smarter decisions faster.",
+    facebook: "www.facebook.com/",
+    twitter: "www.twitter.com/",
+    linkedin: "www.linkedin.com/in/",
+  },
+  {
+    name: "Natalia Vanhorf",
+    image: TESTIMONIAL_IMAGE_03,
+    description:
+      "This software has been a total game-changer for my small business. I used to struggle with follow-ups and organizing leads, but now everything is in one place. It's like having a personal assistant for my sales pipeline!",
+    facebook: "www.facebook.com/",
+    twitter: "www.twitter.com/",
+    linkedin: "www.linkedin.com/in/",
   },
 ];
