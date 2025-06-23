@@ -14,11 +14,15 @@ import { LuChartNoAxesCombined } from "react-icons/lu";
 import {
   MdAssessment,
   MdAssignmentTurnedIn,
+  MdAttachMoney,
   MdMessage,
   MdMonitor,
   MdPeopleAlt,
   MdPhoneIphone,
   MdShoppingCart,
+  MdStore,
+  MdTimer,
+  MdTrendingUp,
 } from "react-icons/md";
 import ADIDAS from "../assets/Logo/adidas.png";
 import COKE from "../assets/Logo/coca-cola.png";
@@ -384,5 +388,33 @@ export const BENEFITS = [
     title: "Seamless Communication Channels",
     description:
       "Keep your entire distribution network in sync with built-in messaging, alerts, and notifications. Communicate faster and make sure everyone’s always on the same page.",
+  },
+];
+
+export const RATES = [
+  {
+    rate: 75,
+    description: "Allowance TA Bill Reduction with Salesync DMS",
+    icon: MdAttachMoney,
+    color: "#0891B2",
+  },
+  {
+    rate: 85,
+    description:
+      "Achieving Increase In Market Visit Efficlency With Salesync DMS",
+    icon: MdTrendingUp,
+    color: "#06B6D4",
+  },
+  {
+    rate: 35,
+    description: "Boots Retail Shop Visit Time with Salesync DMS",
+    icon: MdTimer,
+    color: "#22D3EE",
+  },
+  {
+    rate: 25,
+    description: "Increase in Retail Sales with Salesync DMS",
+    icon: MdStore,
+    color: "#67E8F9",
   },
 ];
