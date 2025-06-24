@@ -1,15 +1,26 @@
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import LOGO from "../../assets/logo.png";
 import { OFFICE_INFORMATIONS, PRODUCTS, QUICK_LINKS } from "../../utils/data";
 
 const Footer = () => {
+  const footerRef = useRef(null);
+  const isInView = useInView(footerRef, { once: true, margin: "-100px" });
+
   return (
-    <footer className="px-5 md:px-16 lg-px-24 xl:px-32 pt-8 w-full bg-cyan-100/40 mt-16">
+    <motion.footer
+      ref={footerRef}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="px-5 md:px-16 lg:px-24 xl:px-32 pt-8 w-full bg-cyan-100/40 mt-16"
+    >
       <div className="flex flex-col md:flex-row justify-between w-full gap-10 md:gap-30 border-b border-gray-500/30 pb-6">
         <div className="flex flex-col md:flex-row justify-between w-full gap-10">
           <div className="flex flex-col md:max-w-96">
-            <img src={LOGO} alt="website-logo" className="w-15" />
+            <img src={LOGO} alt="website-logo" className="w-16" />
             <p className="mt-6 text-sm text-gray-600">
-              A platform benefiting you sales team and enhancing your
+              A platform benefiting your sales team and enhancing your
               distribution management system.
             </p>
           </div>
@@ -64,10 +75,10 @@ const Footer = () => {
         </div>
       </div>
       <p className="pt-5 text-center text-xs md:text-sm pb-5 text-gray-600">
-        &copy;Copyright {new Date().getFullYear()} Salesync. All rights
+        &copy; Copyright {new Date().getFullYear()} Salesync. All rights
         reserved.
       </p>
-    </footer>
+    </motion.footer>
   );
 };
 

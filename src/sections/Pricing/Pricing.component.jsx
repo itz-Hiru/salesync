@@ -1,12 +1,33 @@
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import DASHBOARD from "../../assets/dashboard.jpg";
 
 const Pricing = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const fadeSlideLeft = {
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
+  };
+
+  const fadeSlideRight = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
+  };
+
   return (
     <section
       id="pricing"
-      className="flex flex-col-reverse md:flex-row justify-center gap-5 w-full min-h-[80vh] py-25"
+      ref={ref}
+      className="flex flex-col-reverse md:flex-row justify-center gap-5 w-full min-h-[80vh] py-24 px-6 md:px-12"
     >
-      <div className="flex flex-col w-full md:w-1/2 justify-center items-center md:items-start mt-16 md:mt-0">
+      <motion.div
+        className="flex flex-col w-full md:w-1/2 justify-center items-center md:items-start mt-16 md:mt-0"
+        variants={fadeSlideLeft}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+      >
         <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center md:text-start">
           Witness The Power Of Real Time Dashboard
         </h2>
@@ -28,14 +49,24 @@ const Pricing = () => {
         </div>
         <button
           type="button"
-          className="text-white text-[17px] font-medium bg-linear-to-r from-sky-500 to-cyan-400 px-5 py-3.5 rounded cursor-pointer"
+          className="text-white text-[17px] font-medium bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-3.5 rounded cursor-pointer"
         >
           Get results for your business
         </button>
-      </div>
-      <div className="flex w-full md:w-1/2 items-center justify-center">
-        <img src={DASHBOARD} alt="dashboard image" className="rounded-xl" />
-      </div>
+      </motion.div>
+
+      <motion.div
+        className="flex w-full md:w-1/2 items-center justify-center"
+        variants={fadeSlideRight}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+      >
+        <img
+          src={DASHBOARD}
+          alt="dashboard image"
+          className="rounded-xl shadow-lg"
+        />
+      </motion.div>
     </section>
   );
 };

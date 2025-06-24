@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 html {
-    scroll-behavior: smooth;
-    background-color: #F4F4F4;
+  scroll-behavior: smooth;
+  background-color: #F4F4F4;
 }
 
 @keyframes marquee {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }

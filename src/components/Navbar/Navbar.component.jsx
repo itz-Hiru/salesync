@@ -98,7 +98,12 @@ const Navbar = () => {
         </button>
 
         {NAVLINKS.map((link, i) => (
-          <a key={i} href={link.path} onClick={() => setIsMenuOpen(false)} className="text-black font-semibold hover:text-cyan-400 focus-within:text-cyan-400 transition-colors duration-300">
+          <a
+            key={i}
+            href={link.path}
+            onClick={() => setIsMenuOpen(false)}
+            className="text-black font-semibold hover:text-cyan-400 focus-within:text-cyan-400 transition-colors duration-300"
+          >
             {link.name}
           </a>
         ))}
