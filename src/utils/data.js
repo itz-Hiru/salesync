@@ -418,3 +418,66 @@ export const RATES = [
     color: "#67E8F9",
   },
 ];
+
+export const FAQs = [
+  {
+    question: "What is a Distribution Management System (DMS)?",
+    answer:
+      "A DMS is a software solution that helps businesses manage and streamline their distribution processes, including inventory, orders, and logistics.",
+  },
+  {
+    question: "How does a DMS work?",
+    answer:
+      "A DMS collects, tracks, and processes data across the supply chain to automate tasks like inventory control, order processing, and delivery tracking.",
+  },
+  {
+    question: "How does a DMS contribute to supply chain optimization?",
+    answer:
+      "It improves visibility, reduces delays, and ensures efficient movement of goods from manufacturers to retailers or customers.",
+  },
+  {
+    question: "What are the key components of a DMS?",
+    answer:
+      "Key components include inventory management, order processing, logistics tracking, reporting, and system integration.",
+  },
+  {
+    question: "How much does a DMS cost?",
+    answer:
+      "Costs vary depending on features, users, and deployment type. It can range from a few hundred to several thousand dollars per month.",
+  },
+  {
+    question: "Can a DMS integrate with other business systems?",
+    answer:
+      "Yes, modern DMS platforms can integrate with ERP, CRM, accounting, and other business tools to ensure data consistency.",
+  },
+  {
+    question: "How do I maintain a DMS?",
+    answer:
+      "Regular updates, data backups, user training, and performance monitoring are key to maintaining a DMS.",
+  },
+  {
+    question: "How does a DMS help in reducing costs?",
+    answer:
+      "By automating tasks, reducing errors, and improving supply chain efficiency, a DMS can significantly cut operational costs.",
+  },
+  {
+    question: "Is a DMS suitable for small businesses?",
+    answer:
+      "Yes, many DMS solutions are scalable and affordable, making them suitable for small and medium-sized businesses.",
+  },
+  {
+    question: "How does a DMS improve order processing?",
+    answer:
+      "It automates order entry, tracks status in real time, and reduces manual errors, ensuring faster and more accurate processing.",
+  },
+  {
+    question: "How does a DMS contribute to customer satisfaction?",
+    answer:
+      "By ensuring timely deliveries, accurate order fulfillment, and better communication, a DMS enhances the customer experience.",
+  },
+  {
+    question: "Can a DMS provide real-time data and reporting?",
+    answer:
+      "Yes, most DMS platforms offer real-time dashboards and analytics to support decision-making and performance tracking.",
+  },
+];
