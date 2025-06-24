@@ -6,7 +6,6 @@ import UseCases from "../sections/UseCases/UseCases.section";
 import Pricing from "../sections/Pricing/Pricing.component";
 import Stories from "../sections/Stories/Stories.section";
 import Blogs from "../sections/Blogs/Blogs.section";
-import Contact from "../sections/Contact/Contact.section";
 import AnimatedLogo from "../sections/Hero/AnimatedLogo.section";
 import Process from "../sections/Hero/Process.section";
 import WorkFlow from "../sections/WorkFlow/WorkFlow.section";
@@ -31,7 +30,6 @@ const Landing = () => {
         <Benefits />
         <Stories />
         <Blogs />
-        <Contact />
       </div>
       <Footer />
     </div>

@@ -1,3 +1,4 @@
+import { BiBarChartSquare } from "react-icons/bi";
 import { BsTelephoneInbound } from "react-icons/bs";
 import {
   FaBoxes,
@@ -7,7 +8,13 @@ import {
   FaUsers,
   FaUserTag,
 } from "react-icons/fa";
-import { FaBuilding, FaIndustry } from "react-icons/fa6";
+import {
+  FaBuilding,
+  FaIndustry,
+  FaLocationDot,
+  FaPhone,
+} from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
 import { IoMdTime } from "react-icons/io";
 import { IoBulbOutline, IoSettingsOutline } from "react-icons/io5";
 import { LuChartNoAxesCombined } from "react-icons/lu";
@@ -24,28 +31,27 @@ import {
   MdTimer,
   MdTrendingUp,
 } from "react-icons/md";
+import ATTENDANCE from "../assets/Interfaces/attendance.jpg";
+import INSPECTION from "../assets/Interfaces/inspection.jpg";
+import PRODUCT_MANAGEMENT from "../assets/Interfaces/product-management.jpg";
+import REPORT from "../assets/Interfaces/reports.jpg";
+import STOCK from "../assets/Interfaces/stock.jpg";
+import TRACKING from "../assets/Interfaces/tracking.jpg";
 import ADIDAS from "../assets/Logo/adidas.png";
 import COKE from "../assets/Logo/coca-cola.png";
 import DIALOG from "../assets/Logo/dialog.png";
 import DSI from "../assets/Logo/dsi.png";
 import HIRU_TV from "../assets/Logo/hiru-tv.png";
 import MOBITEL from "../assets/Logo/mobitel.png";
+import TESTIMONIAL_IMAGE_01 from "../assets/Testimonials/testimonial-01.jpg";
+import TESTIMONIAL_IMAGE_02 from "../assets/Testimonials/testimonial-02.jpg";
+import TESTIMONIAL_IMAGE_03 from "../assets/Testimonials/testimonial-03.jpg";
 import CASE01 from "../assets/Use-Cases/image-01.jpg";
 import CASE02 from "../assets/Use-Cases/image-02.jpg";
 import CASE03 from "../assets/Use-Cases/image-03.jpg";
 import CASE04 from "../assets/Use-Cases/image-04.jpg";
 import CASE05 from "../assets/Use-Cases/image-05.jpg";
 import CASE06 from "../assets/Use-Cases/image-06.jpg";
-import TRACKING from "../assets/Interfaces/tracking.jpg";
-import STOCK from "../assets/Interfaces/stock.jpg";
-import REPORT from "../assets/Interfaces/reports.jpg";
-import INSPECTION from "../assets/Interfaces/inspection.jpg";
-import PRODUCT_MANAGEMENT from "../assets/Interfaces/product-management.jpg";
-import ATTENDANCE from "../assets/Interfaces/attendance.jpg";
-import TESTIMONIAL_IMAGE_01 from "../assets/Testimonials/testimonial-01.jpg";
-import TESTIMONIAL_IMAGE_02 from "../assets/Testimonials/testimonial-02.jpg";
-import TESTIMONIAL_IMAGE_03 from "../assets/Testimonials/testimonial-03.jpg";
-import { BiBarChartSquare } from "react-icons/bi";
 
 export const NAVLINKS = [
   {
@@ -71,10 +77,6 @@ export const NAVLINKS = [
   {
     name: "Blogs",
     path: "#blogs",
-  },
-  {
-    name: "Contact Us",
-    path: "#contact",
   },
 ];
 
@@ -479,5 +481,50 @@ export const FAQs = [
     question: "Can a DMS provide real-time data and reporting?",
     answer:
       "Yes, most DMS platforms offer real-time dashboards and analytics to support decision-making and performance tracking.",
+  },
+];
+
+export const QUICK_LINKS = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "About Us",
+    link: "/about",
+  },
+  {
+    name: "Pricing",
+    link: "#pricing",
+  },
+  {
+    name: "Careers",
+    link: "/careers",
+  },
+  {
+    name: "Privacy Policy",
+    link: "/privacy-statement",
+  },
+];
+
+export const PRODUCTS = [
+  { name: "Salesync DMS" },
+  { name: "Salesync FMCG" },
+  { name: "Salesync Cement" },
+  { name: "Salesync Seed" },
+];
+
+export const OFFICE_INFORMATIONS = [
+  {
+    icon: FaLocationDot,
+    description: "752, Dr Danister De Silva Mawatha, Colombo, 1 00900",
+  },
+  {
+    icon: FaPhone,
+    description: "+94 72 550 8919",
+  },
+  {
+    icon: HiOutlineMail,
+    description: "info@salesync.com",
   },
 ];
